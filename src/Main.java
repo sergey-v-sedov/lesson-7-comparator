@@ -19,7 +19,8 @@ public class Main {
         cats.add(cat4);
 
         System.out.println(cats);
-        Collections.sort(cats, new CatsWeigthCompartator());
+        //Collections.sort(cats, new CatsWeigthCompartator());
+        Collections.sort(cats, (c1, c2) -> c2.weight - c1.weight );
         System.out.println(cats);
 
         // ====================================================
